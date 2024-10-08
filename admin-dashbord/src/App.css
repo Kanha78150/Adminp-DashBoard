@@ -102,8 +102,88 @@ body {
 }
 
 .sidebarLi Button {
-  color: #000;
+  color: rgba(0, 0, 0, 0.7);
   justify-content: left;
   text-align: left;
-  border-radius: 0;
+  border-radius: 10px;
+  padding: 12px 15px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sidebarLi Button .active {
+  background-color: #f1f1f1;
+}
+
+.sidebarLi Button * {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}
+
+.submenuWrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu {
+  position: relative;
+  padding: 0px 45px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: 1px;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.subLi {
+  width: 100%;
+}
+
+.subLink {
+  text-decoration: none;
+  color: #5e5d72;
+  display: block;
+  padding: 5px 0;
+}
+
+/* colapse css */
+.colapsed {
+  height: 0px;
+}
+
+.colapsed .submenu {
+  opacity: 0;
+}
+
+
+.colapse {
+  height: auto;
+}
+
+
+.colapse .submenu {
+  opacity: 1;
 }
