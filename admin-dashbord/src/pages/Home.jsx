@@ -1,8 +1,16 @@
+import Sidebar from "../components/UI/Sidebar";
+
 const Home = () => {
   return (
-    <>
-      <h1>This is home page</h1>
-    </>
+    <div className="content d-flex">
+      <div className="sidebarWrapper">
+        <Sidebar />
+      </div>
+
+      <div className="contentPage">
+        <h1>Home Page</h1>
+      </div>
+    </div>
   );
 };
 
