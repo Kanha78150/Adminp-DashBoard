@@ -26,6 +26,7 @@ import { MdEmail } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
 
 import Search from "../UI/Search";
+import { colors } from "@mui/material";
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -50,7 +51,7 @@ export const Header = () => {
       <header className="d-flex align-items-center bg-light navBar">
         <div className="container-fluid w-100">
           <div className="row d-flex align-items-center w-100">
-            <div className="col-sm-3 part1">
+            <div className="col-sm-2 part1">
               <NavLink
                 to={"/"}
                 className="d-flex align-items-center text-decoration-none LOGO"
@@ -60,7 +61,7 @@ export const Header = () => {
               </NavLink>
             </div>
 
-            <div className="col-sm-3 d-flex align-items-center part2 ps-4">
+            <div className="col-sm-4 d-flex align-items-center part2 ps-4">
               <Button className="rounded-circle me-3">
                 <MdMenuOpen />
               </Button>

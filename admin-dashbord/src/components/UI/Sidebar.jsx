@@ -19,6 +19,7 @@ const Sidebar = () => {
     setActiveTab(index);
     setIsToggle(!isToggle);
   };
+
   return (
     <>
       <div className="sidebar">

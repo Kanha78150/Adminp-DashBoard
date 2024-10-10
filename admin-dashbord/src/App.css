@@ -25,9 +25,13 @@ body {
 }
 
 .LOGO span {
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 29px;
+  font-weight: 600;
   color: black;
+}
+
+.part1 {
+  width: 20%;
 }
 
 .rounded-circle {
@@ -186,4 +190,8 @@ body {
 
 .colapse .submenu {
   opacity: 1;
+}
+
+.rightContent {
+  padding: 85px 25px;
 }

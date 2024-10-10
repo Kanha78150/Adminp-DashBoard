@@ -8,7 +8,9 @@ const Home = () => {
       </div>
 
       <div className="contentPage">
-        <h1>Home Page</h1>
+        <div className="rightContent">
+          <h1>Dashbord</h1>
+        </div>
       </div>
     </div>
   );
