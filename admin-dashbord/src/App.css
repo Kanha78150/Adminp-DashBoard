@@ -36,7 +36,6 @@ body {
 
 .rounded-circle {
   border-radius: 50%;
-  border: 2px solid red;
   min-width: 40px !important;
   width: 40px !important;
   height: 40px !important;
@@ -263,4 +262,98 @@ body {
 .chart svg {
   font-size: 110px;
   color: #000;
+}
+
+
+.graphbox {
+  background-image: linear-gradient(#1e5dd0, #125be8);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.card {
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.b-heading {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.p-filter {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #403e57;
+}
+
+.table .thead-dark th {
+  background-color: #1866ee;
+  border-color: rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.action-btns {
+  min-width: 30px !important;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+}
+
+.action-btns svg {
+  font-size: 32px !important;
+}
+
+.secondary-btn {
+  background: rgba(203, 60, 231, 0.1) !important;
+}
+
+.success-btn {
+  background: rgba(26, 159, 83, 0.2) !important;
+}
+
+
+.error-btn {
+  background: rgba(241, 17, 51, 0.2) !important;
+}
+
+table.v-align td {
+  vertical-align: middle;
+}
+
+.imgWrapper {
+  width: 100%;
+}
+
+.img-con {
+  width: 50%;
+}
+
+.table-conatiner {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+.table-img-prodcut {
+  border: 2px solid green;
+  width: 30%;
+  flex: 0, 0, 70%;
+}
+
+.table-img-prodcut img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 70%;
+
+  border: 2px solid red;
 }
