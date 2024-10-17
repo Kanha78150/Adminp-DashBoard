@@ -917,7 +917,10 @@ const Home = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className=" d-flex justify-content-end align-items-center">
+              <div className=" d-flex justify-content-between align-items-center">
+                <p>
+                  Show <strong>12</strong> of <strong>60</strong> results
+                </p>
                 <Pagination count={10} color="primary" />
               </div>
             </div>
