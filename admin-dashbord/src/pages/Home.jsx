@@ -58,7 +58,7 @@ const Home = () => {
   const [search, setSearch] = useState("");
   return (
     <div className="content d-flex">
-      <div className="sidebarWrapper">
+      <div className={`sidebarWrapper`}>
         <Sidebar />
       </div>
 

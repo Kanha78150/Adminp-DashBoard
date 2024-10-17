@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Button from "@mui/material/Button";
@@ -11,6 +11,7 @@ import { TbBrandProducthunt } from "react-icons/tb";
 import { FaFileInvoice } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
+import { MyContext } from "../../App";
 
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -19,6 +20,8 @@ const Sidebar = () => {
     setActiveTab(index);
     setIsToggle(!isToggle);
   };
+
+  const context = useContext(MyContext);
 
   return (
     <>

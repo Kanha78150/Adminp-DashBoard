@@ -27,6 +27,7 @@ import { IoMdNotifications } from "react-icons/io";
 
 import Search from "../UI/Search";
 import { colors } from "@mui/material";
+import { MyContext } from "../../App";
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -46,6 +47,9 @@ export const Header = () => {
   const handleClosenotifications = () => {
     setisOpenNotifications(false);
   };
+
+  // Contex calling
+  const context = React.useContext(MyContext);
   return (
     <>
       <header className="d-flex align-items-center bg-light navBar">
@@ -62,8 +66,17 @@ export const Header = () => {
             </div>
 
             <div className="col-sm-4 d-flex align-items-center part2 ps-4">
-              <Button className="rounded-circle me-3">
-                <MdMenuOpen />
+              <Button
+                className="rounded-circle me-3"
+                onClick={() =>
+                  context.setIsToggleSidebar(!context.isToggleSidebar)
+                }
+              >
+                {context.isToggleSidebar === false ? (
+                  <MdMenuOpen />
+                ) : (
+                  <MdMenu />
+                )}
               </Button>
 
               <Search />
